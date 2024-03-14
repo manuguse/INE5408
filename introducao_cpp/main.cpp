@@ -13,15 +13,23 @@ int somaV1(int a, int b) {
 
 int somaV2(int *a, int *b) {
     // Retorna a soma dos valores apontados pelos ponteiros a e b
+    // duplicação de memória
     return *a + *b;
 }
 
 int somaV3(int &a, int &b) {
-    // Retorna a soma dos valores referenciados por a e b
+    // Retorna a soma dos valores referenciados por a e 
+    // sem duplicação de memória
+    // apelido, nao endereço
     return a + b;
 }
 
 int main() {
+    int x = 1, y = 2;
+    
+    cout << somaV1(x,y) << endl;
+    cout << somaV2(&a, &y) << endl;
+    cout << somaV3(a,y) << endl;
 
     char a;
     int b;
@@ -58,5 +66,3 @@ int main() {
     
     return 0;
 }
-
-
