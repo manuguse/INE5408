@@ -28,8 +28,8 @@ int main() {
     int x = 1, y = 2;
     
     cout << somaV1(x,y) << endl;
-    cout << somaV2(&a, &y) << endl;
-    cout << somaV3(a,y) << endl;
+    cout << somaV2(&x, &y) << endl;
+    cout << somaV3(x,y) << endl;
 
     char a;
     int b;
