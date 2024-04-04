@@ -1,6 +1,6 @@
 // Copyright [2024] <Emanuelle Guse>
 //#include "./array_stack.h"
-#include "structures.h"
+#include "ArrayStack.h"
 
 bool verificaChaves(std::string trecho_programa) {
     bool resposta = true;
