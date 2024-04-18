@@ -1,0 +1,9 @@
+# ninja log v5
+18	585	7333532673358815	CMakeFiles/estruturas_de_dados.dir/structures/structures.cpp.obj	480eabe0bebada8a
+55	647	7333532438701227	CMakeFiles/estruturas_de_dados.dir/vpls/exercicios-de-alocacao/vpl2.cpp.obj	d94c333caaee03c
+649	763	7333532439874710	CMakeFiles/estruturas_de_dados.dir/vpls/vpl_inicial.cpp.obj	6baa4f146c0c1c60
+100	664	7333532438701227	CMakeFiles/estruturas_de_dados.dir/vpls/exercicios-de-alocacao/vpl3.cpp.obj	444ca3b6ffb80afb
+18	739	7333532439643003	CMakeFiles/estruturas_de_dados.dir/aulas/03-19.cpp.obj	b622a90c362e4418
+36	790	7333532440148241	CMakeFiles/estruturas_de_dados.dir/vpls/exercicios-de-alocacao/vpl1.cpp.obj	128b90e3eeb154e6
+9	630	7333533204709221	CMakeFiles/estruturas_de_dados.dir/introducao_cpp/main.cpp.obj	bd8fd1c18731e69a
+4	171	7333533911034836	build.ninja	79842fc63362b327

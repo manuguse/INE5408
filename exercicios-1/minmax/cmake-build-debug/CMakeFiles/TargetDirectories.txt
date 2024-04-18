@@ -1,0 +1,3 @@
+C:/Users/emanu/Documents/ufsc/estruturas-de-dados/exercicios-1/minmax/cmake-build-debug/CMakeFiles/minmax.dir
+C:/Users/emanu/Documents/ufsc/estruturas-de-dados/exercicios-1/minmax/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/emanu/Documents/ufsc/estruturas-de-dados/exercicios-1/minmax/cmake-build-debug/CMakeFiles/rebuild_cache.dir
