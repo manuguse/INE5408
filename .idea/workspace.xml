@@ -19,14 +19,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67e44960-c8fa-4c36-9e78-ee4bce57bb20" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/1022.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structures/ArrayLinkedList.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structures/ArrayList.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structures/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-35d0cc3b591656bfc25c.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structures/cmake-build-debug/.cmake/api/v1/reply/index-2024-04-05T22-48-35-0081.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structures/cmake-build-debug/.cmake/api/v1/reply/target-structures-Debug-7ecc70cb4cf1cca5bbfb.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structures/aninhamento-de-chaves.h" beforeDir="false" afterPath="$PROJECT_DIR$/beecrowd-ds/1022.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structures/estacionamento.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trabalhos/trabalho1/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/trabalhos/trabalho1/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +115,7 @@
       <workItem from="1712171985798" duration="45000" />
       <workItem from="1712859431384" duration="3061000" />
       <workItem from="1713373685034" duration="61000" />
-      <workItem from="1713464229043" duration="1710000" />
+      <workItem from="1713464229043" duration="2271000" />
     </task>
     <servers />
   </component>
