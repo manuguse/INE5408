@@ -2,7 +2,6 @@
 #include <string>
 #include <fstream>
 #include "arrayStack.h"
-#include "arrayQueue.h"
 
 using namespace std;
 using namespace structures;
@@ -13,19 +12,13 @@ struct Scenario {
     bool wrong = false;
 };
 
-const char *getScenariosDir() {
-    // TODO fazer ficar generico
-    const char *scenariosDirEnv = getenv("CENARIOS_DIR");
-    if (scenariosDirEnv != nullptr) {
-        return scenariosDirEnv;
-    } else {
-        return R"(C:/Users/emanu/Documents/ufsc/estruturas-de-dados/trabalhos/trabalho1/cenarios)";
-    }
+string getDirectory() {
+    return R"(C:\Users\emanu\Documents\ufsc\estruturas-de-dados\trabalhos\trabalho1\)";
 }
 
 int verifyNestedTags(string *scenario) {
 
-    ArrayStack tagsStack = ArrayStack<char>(100);
+    ArrayStack <char> tagsStack = ArrayStack<char>(100);
     for (int i = 0; i < scenario->size(); i++) {
         if (scenario->at(i) == '<') {
             if (scenario->at(i + 1) == '/') {
@@ -33,7 +26,7 @@ int verifyNestedTags(string *scenario) {
                 char tag = scenario->at(i + 1);
                 if (tagsStack.empty()) {
                     cout << "Erro" << endl;
-                    return 1;
+                    return 2;
                 }
                 char top = tagsStack.top();
                 if (top != tag) {
@@ -47,43 +40,42 @@ int verifyNestedTags(string *scenario) {
             }
         }
     }
-    cout << "Tudo certo" << endl;
     return 0;
 }
 
-int loadFile(Scenario *currentScenario) {
-    string scenarioDir = getScenariosDir();
-    string filename = scenarioDir + "/" + currentScenario->name;
-    ifstream file(filename);
+void loadFile(Scenario *currentScenario) {
+
+    string directory = getDirectory();
+    string filename = directory + currentScenario->name; // assumimos que o nome do arquivo é o nome do
+                                                         // cenário e que ele está na raiz do projeto
+    ifstream file(filename);              // abrimos o arquivo
 
     if (!file.is_open()) {
         cerr << "Erro ao abrir o arquivo: " << filename << endl;
+        currentScenario->wrong = true;
     } else {
         string line;
         while (getline(file, line)) {
-            currentScenario->content += line + "\n"; // Add newline for clarity
+            currentScenario->content += line + "\n";
         }
         if (verifyNestedTags(&currentScenario->content)) {
             currentScenario->wrong = true;
-            return 1;
-        };
+        }
         file.close();
     }
-    return 0;
 }
 
 void defineArea(Scenario *currentScenario) {
-    if (currentScenario->wrong) {
-        cout << "Erro" << endl;
-    } else {
-        cout << "Tudo certo" << endl;
-    }
+    printf("");
 }
 
+void findMeasures(Scenario *currentScenario) {
+}
 
 int main() {
     Scenario currentScenario = Scenario();
-    cin >> currentScenario.name;
+    // cin >> currentScenario.name;
+    currentScenario.name = "cenarios1.xml";
     loadFile(&currentScenario);
     if (!currentScenario.wrong)
         defineArea(&currentScenario);
