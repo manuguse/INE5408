@@ -13,7 +13,7 @@ public:
 
     void insert(const T& data);
 
-    void remove(const T& data);
+    bool remove(const T& data);
 
     bool contains(const T& data) const;
 
@@ -46,7 +46,7 @@ private:
                 } else {
                     left = new Node(data_);
                 }
-            } else { 
+            } else {
                 if (right != nullptr) {
                     right->insert(data_);
                 } else {
@@ -55,37 +55,55 @@ private:
             }
         }
 
-        void remove(const T& data_) { // por que estava como bool?
+        bool remove(const T& data_) {
             if (data_ > data) {
                 if (right != nullptr) {
                     if (right->data == data_) {
                         delete right;
                         right = nullptr;
+                        return true;
                     } else {
-                        right->remove(data_);
+                        return right->remove(data_);
                     }
+                } else if (left != nullptr) {
+                    return left->remove(data_);
+                } else {
+                    return false;
                 }
             } else if (data_ < data) {
                 if (left != nullptr) {
                     if (left->data == data_) {
                         delete left;
                         left = nullptr;
+                        return true;
                     } else {
-                        left->remove(data_);
+                        return left->remove(data_);
                     }
+                } else if (right != nullptr) {
+                    return right->remove(data_);
+                } else {
+                    return false;
                 }
-            } else {  // data_ == data
+            } else {
                 if (left != nullptr && right != nullptr) {
                     Node* aux = right;
                     while (aux->left != nullptr) {
                         aux = aux->left;
                     }
                     data = aux->data;
-                    right->remove(data);
+                    return right->remove(data);
+                } else if (left != nullptr) {
+                    data = left->data;
+                    delete left;
+                    left = nullptr;
+                    return true;
+                } else if (right != nullptr) {
+                    data = right->data;
+                    delete right;
+                    right = nullptr;
+                    return true;
                 } else {
-                    Node* aux = left != nullptr ? left : right;
-                    delete aux;
-                    aux = nullptr;
+                    return false;
                 }
             }
         }
@@ -169,11 +187,11 @@ void structures::BinaryTree<T>::insert(const T& data) {
 }
 
 template<typename T>
-void structures::BinaryTree<T>::remove(const T& data) {
+bool structures::BinaryTree<T>::remove(const T& data) {
     if (root != nullptr) {
         root->remove(data);
         size_--;
-    }
+    } return false;
 }
 
 template<typename T>
