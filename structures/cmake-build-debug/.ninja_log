@@ -1,6 +1,0 @@
-# ninja log v5
-1	161	7340605150081745	build.ninja	2313a61301ba02f0
-421	534	7333541484755847	structures.exe	6449cae0e358c76d
-0	405	7339598332047894	CMakeFiles/structures.dir/aninhamento-de-chaves.cpp.obj	ce1b46f02b02647f
-3	420	7333541483672264	CMakeFiles/structures.dir/structures.cpp.obj	dd59ac7aa280ee02
-10	401	7339598332010417	CMakeFiles/structures.dir/estacionamento.cpp.obj	21d4ab99658e88a1
