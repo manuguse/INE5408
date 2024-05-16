@@ -1,3 +1,0 @@
-C:/Users/emanu/Documents/ufsc/estruturas-de-dados/trabalhos/trabalho1/cmake-build-debug/CMakeFiles/trabalho1.dir
-C:/Users/emanu/Documents/ufsc/estruturas-de-dados/trabalhos/trabalho1/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/emanu/Documents/ufsc/estruturas-de-dados/trabalhos/trabalho1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
