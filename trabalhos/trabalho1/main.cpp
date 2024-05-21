@@ -3,8 +3,8 @@
 #include <string>
 #include <vector>
 
-#include "arrayStack.h"
-#include "arrayQueue.h"
+#include "array_stack.h"
+#include "array_queue.h"
 
 using namespace std;
 using namespace structures;

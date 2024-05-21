@@ -1,7 +1,3 @@
-//
-// Created by emanu on 03/04/2024.
-//
-
 #ifndef TRABALHO1_ARRAYQUEUE_H
 #define TRABALHO1_ARRAYQUEUE_H
 
@@ -138,4 +134,4 @@ bool structures::ArrayQueue<T>::full() {
     return size_ == max_size_;
 }
 
-#endif TRABALHO1_ARRAYQUEUE_H
+#endif 
